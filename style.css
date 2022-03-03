@@ -1,0 +1,74 @@
+.Upper{
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Middle{
+    background-color:white;
+    font-family: 'Courier New', Courier, monospace;
+    height: 58px;
+    margin: -7px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#middle h4{
+    margin: 0px 0px;
+    color: white;
+}
+.mid{
+    margin: 0px -210px;
+}
+#left{
+    cursor:pointer;
+}
+#New{
+    width: 111px;
+    height: 44px;
+    margin: 13px;
+    padding: 5px;
+}
+.but{
+    background-color: white;
+    color: red;
+    height: 16px;
+    width: 41px;
+    border-style: hidden;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+}
+.Bottom{
+    background-color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.one{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 6px 0px;
+    
+}
+.bot{
+    height: 106px;
+    width: 119px;
+    margin: 8px 8px;
+    background-color: brown;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    border-width: 0px;
+    border-color: goldenrod;
+}

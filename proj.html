@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="side.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project 1</title>
+</head>
+<body>
+    <section class = "Upper" id = "up">
+        <div id = "u"><h3>The Great</h3></div>
+        <div id = "m"><h2 id = "rgb">rgb(100,100,100)</h2></div>
+        <div id = "b"><h4>Color Game</h4></div>
+    </section>
+    <section class = "Middle">
+        <div class = "mid" id = "left"> <button class = "but" id = "New" onclick = "NewColors()">New Colors</button></div>
+        <div class = "mid" id = "middle"> <h4 id = "corr">Correct!!!</h4></div>
+        <div class = "mid" id = "right">
+            <button class = "but" id = "easy" onclick = "Easy()">Easy</button>
+            <button class = "but" id = "hard" onclick = "Hard()">Hard</button>
+        </div>
+    </section>
+    <section class = "Bottom">
+      <div class = "one">
+        <button class = "bot" id="col1" onclick = "color(this.id)"></button>
+        <button class = "bot" id="col2" onclick = "color(this.id)"></button>
+        <button class = "bot" id="col3" onclick = "color(this.id)"></button>
+    </div>
+    <div class="one"> 
+        <button class = "bot" id="col4" onclick = "color(this.id)"></button>
+        <button class = "bot" id="col5" onclick = "color(this.id)"></button>
+        <button class = "bot" id="col6" onclick = "color(this.id)"></button>
+    </div>     
+    </section>  
+</body>
+</html>
