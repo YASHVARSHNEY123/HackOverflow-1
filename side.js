@@ -8,8 +8,8 @@ function Easy(){
     var thergb = [];
      thergb[0] = "rgb(" + x + ", " + y + ", " + z + ")";
      document.getElementById("rgb").innerHTML = thergb[0];
-     thergb[1] = "rgb(" + Math.abs(x-y) + "," + Math.abs(y-z) + "," + Math.abs(z - x) + ")";
-    thergb[2] = "rgb(" + Math.abs(y-z) + "," + Math.abs(z-x) + "," + Math.abs(x-y) + ")";
+     thergb[1] = "rgb(" + Math.abs((x*y)%256) + "," + Math.abs((y*z)%256) + "," + Math.abs((z*x)%256) + ")";
+    thergb[2] = "rgb(" + Math.abs((y*z)%256) + "," + Math.abs((z*x*y)*256) + "," + Math.abs((x+234)%256) + ")";
     let q = Math.floor(Math.random() * 3);
     [thergb[0] , thergb[q]] = [thergb[q],thergb[0]];
     let bot = document.getElementsByClassName("bot");
@@ -31,11 +31,11 @@ function Hard(){
     var thergb = [];
      thergb[0] = "rgb(" + x + ", " + y + ", " + z + ")";
      document.getElementById("rgb").innerHTML = thergb[0];
-     thergb[1] = "rgb(" + Math.abs(x-y) + "," + Math.abs(y-z) + "," + Math.abs(z - x) + ")";
-     thergb[2] = "rgb(" + Math.abs(z-y) + "," + Math.abs(y-x) + "," + Math.abs(z - x) + ")";
-     thergb[3] = "rgb(" + Math.abs((x+y)/2) + "," + Math.abs((y+z)/2) + "," + Math.abs((z+x)/2) + ")";
-    thergb[4] = "rgb(" + Math.abs((x+y+z)/3) + "," + Math.abs((y+z-x)/3) + "," + Math.abs((z+x-y)/3) + ")";
-    thergb[5] = "rgb(" + Math.abs(x-z) + "," + Math.abs(y-z) + "," + Math.abs((z - y+x)/3) + ")";
+     thergb[1] = "rgb(" + Math.abs((x*y)%256) + "," + Math.abs((y*z)%256) + "," + Math.abs((z*x)%256) + ")";
+     thergb[2] = "rgb(" + Math.abs((y*z)%256) + "," + Math.abs((z*x*y)*256) + "," + Math.abs((x+234)%256) + ")";
+     thergb[3] = "rgb(" + Math.abs(((x+y)*100)%256) + "," + Math.abs((y+z+x)%256) + "," + Math.abs((z*x*x)%256) + ")";
+    thergb[4] = "rgb(" + Math.abs((z*z*z)%256) + "," + Math.abs((y*y*y)%256) + "," + Math.abs((x*x*x)/3) + ")";
+    thergb[5] = "rgb(" + Math.abs((x+333)%256) + "," + Math.abs((y*y*x*z)%256) + "," + Math.abs((223+y+x)%256) + ")";
     let q = Math.floor(Math.random() * 6);
     [thergb[0] , thergb[q]] = [thergb[q],thergb[0]];
     let bot = document.getElementsByClassName("bot");
