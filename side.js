@@ -9,7 +9,7 @@ function Easy(){
      thergb[0] = "rgb(" + x + ", " + y + ", " + z + ")";
      document.getElementById("rgb").innerHTML = thergb[0];
      thergb[1] = "rgb(" + Math.abs((x*y)%256) + "," + Math.abs((y*z)%256) + "," + Math.abs((z*x)%256) + ")";
-    thergb[2] = "rgb(" + Math.abs((y*z)%256) + "," + Math.abs((z*x*y)*256) + "," + Math.abs((x+234)%256) + ")";
+    thergb[2] = "rgb(" + Math.abs((y*z)%256) + "," + Math.abs((z*x*y)%256) + "," + Math.abs((x+234)%256) + ")";
     let q = Math.floor(Math.random() * 3);
     [thergb[0] , thergb[q]] = [thergb[q],thergb[0]];
     let bot = document.getElementsByClassName("bot");
@@ -32,7 +32,7 @@ function Hard(){
      thergb[0] = "rgb(" + x + ", " + y + ", " + z + ")";
      document.getElementById("rgb").innerHTML = thergb[0];
      thergb[1] = "rgb(" + Math.abs((x*y)%256) + "," + Math.abs((y*z)%256) + "," + Math.abs((z*x)%256) + ")";
-     thergb[2] = "rgb(" + Math.abs((y*z)%256) + "," + Math.abs((z*x*y)*256) + "," + Math.abs((x+234)%256) + ")";
+     thergb[2] = "rgb(" + Math.abs((y*z)%256) + "," + Math.abs((z*x*y)%256) + "," + Math.abs((x+234)%256) + ")";
      thergb[3] = "rgb(" + Math.abs(((x+y)*100)%256) + "," + Math.abs((y+z+x)%256) + "," + Math.abs((z*x*x)%256) + ")";
     thergb[4] = "rgb(" + Math.abs((z*z*z)%256) + "," + Math.abs((y*y*y)%256) + "," + Math.abs((x*x*x)/3) + ")";
     thergb[5] = "rgb(" + Math.abs((x+333)%256) + "," + Math.abs((y*y*x*z)%256) + "," + Math.abs((223+y+x)%256) + ")";
